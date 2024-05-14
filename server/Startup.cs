@@ -37,6 +37,8 @@ public class Startup
     // NOTE don't forget to register your dependencies!
     services.AddScoped<CarsRepository>();
     services.AddScoped<CarsService>();
+    services.AddScoped<HousesRepository>();
+    services.AddScoped<HousesService>();
   }
 
   private void ConfigureCors(IServiceCollection services)
